@@ -1,0 +1,525 @@
+/*默认CSS样式*/
+*{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	color:#333;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+/*100%的top*/
+#top{
+	width:100%;
+	height:31px;
+	background:#F2F2F2;
+}
+.fl{
+	float:left;
+}
+/*头部*/
+#header{
+	width:1200px;
+	height:31px;
+	margin:0 auto;
+}
+/*头左边的首页图标信息*/
+#home{
+	width:100px;
+	height:31px;
+	/*background:gray;*/
+	float:left;
+	margin-left:30px;
+	line-height:31px;
+}
+/*头左图标*/
+#home span{
+	width:16px;
+	height:16px;
+	float:left;
+	margin-right:7px;
+	margin-top:7px;
+	display:inline-block;
+	background:url(../imgs/2.png) no-repeat -4px -243px;
+}
+/*头左字信息*/
+#header .home-name{
+	height:28px;
+	line-height:28px;
+	/*display:inline-block;*/
+	text-align: center;
+	float:left;
+}
+#city,#county{
+
+ 	display:none;
+}
+/*头右边的导航信息*/
+#nav{
+	width:638px;
+	height:31px;
+	/*background:green;*/
+	float:right;
+	margin-right:-10px;
+}
+#nav ul li{
+	float:right;
+	margin-right:15px;
+	line-height:31px;
+	position:relative;
+}
+#che,#dian,#dan {
+	margin-left:25px;
+}
+#nav ul li:hover{
+	cursor:pointer;
+}
+.xian{
+	width:1px;
+	height:12px;
+	color:#DDDDDD;
+}
+#nav ul li:nth-child(1){
+	background:url(../imgs/2.png);
+	background-position:-1px -568px;
+}
+#nav ul li:nth-child(5){
+	background:url(../imgs/2.png);
+	background-position:-1px -419px;
+}
+#nav ul li:nth-child(7){
+	background:url(../imgs/2.png);
+	background-position:-1px -527px;
+}
+/*向下的箭头*/
+.down{
+	display:block;
+	width:10px;
+	height:10px;
+	position:absolute;
+	right:-12px;
+	top:11px;
+	background:url(../imgs/2.png);
+	background-position:-3px -472px;
+	color:#DDDDDD;
+}
+/*LOGIN区域*/
+/*外面的100%*/
+#login{
+	width:100%;
+	height:72px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background:#F2F2F2;
+}
+/*里面的区域*/
+.login-in{
+	width:1200px;
+	height:72px;
+	/*background:white;*/
+	margin:0 auto;
+}
+.login-in .mymogujie{
+	width:207px;
+	height:51px;
+	float:left;
+	margin-top:12px;
+}
+/*LOGIN区域右流程图*/
+.chengxu{
+	width:auto;
+	height:23px;
+	padding-top:18px;
+	float:right;
+}
+.chengxu>span>p{
+	color:#fff;
+	font-size:14px;
+	float:right;
+	margin-right:8px;
+	margin-top:2px;
+}
+.chengxu>span:first-of-type>p{
+	clear:both;
+	float:left;
+	margin-right:8px;
+	margin-left:8px;
+}
+.chengxu>span{
+	width:157px;
+	height:23px;
+	background:url(../imgs/3.png);
+	display:block;
+	float:left;
+	
+}
+.chengxu>span:first-of-type{
+	width:78px;
+	background:url(../imgs/4.png);
+}
+.chengxu>span:nth-of-type(2){
+	width:79px;
+	background:url(../imgs/3.png) -78px 0px;
+}
+.chengxu>span>.text{
+	width:auto;
+	height:auto;
+	font-size:12px;
+	clear:both;
+	float:right;
+	color:#999999;
+	margin-top:12px;
+}
+.chengxu>span:nth-of-type(2){
+	;
+	margin-right:-5px;
+}
+.chengxu>span:nth-of-type(2)>.text{
+	margin-right:-15px;
+}
+.chengxu>span:nth-of-type(1)>.text{
+	float:left;
+	margin-left:-8px;
+}
+/*购物车里面的信息*/
+#content{
+	width: 100%;
+	height: auto;
+	/*background:gray;*/
+}
+.content-in{
+	width: 1200px;
+	height: auto;
+	margin:0 auto;
+	/*background:yellow;*/
+}
+/*第一部分头部显示*/
+#count_rap{
+	width:100%;
+	height:38px;
+	padding-top:30px;
+}
+#count_rap div{
+	padding-bottom:6px;
+	height:28px;
+	text-align:center;
+	float:left;
+}
+#count_rap div a{
+	font-size:20px;
+	color:#333333;
+}
+#count_rap .item_count{
+	border-bottom:3px solid #FF5577 ;
+}
+#count_rap .item_count a{
+	color:#FF5577;
+}
+#count_rap .item_count .first{
+	color:#FF5577;
+}
+#count_rap div:first-child,#count_rap div:last-child{
+	width:100px;
+}
+#count_rap div span{
+	font-size:20px;
+	margin-left:3px;
+}
+#count_rap div:nth-child(2){
+	width:57px;
+	margin-left:59px;
+	margin-right:59px;
+}
+/*第二部分头部操作栏*/
+table{
+	border-collapse:collapse;
+}
+.operation{
+	width:100%;
+	height:auto;
+}
+.operation .tr_1{
+	background:#F6F6F6;
+	border:1px solid #ccc;
+}
+th,td{
+	font-weight:400;
+	height:20px;
+	padding:15px 0;
+}
+.allcheck{
+	padding-left: 24px;
+    width: 56px;
+}
+.operating{
+	width:500px;
+	height:33px;
+	padding: 8px 10px;
+}
+.information{
+	width: 140px;
+	vertical-align:top;
+	text-align:center;
+}
+.price{
+	width:122px;
+	vertical-align:top;
+	text-align:center;
+}
+.count{
+	width:156px;
+	vertical-align:top;
+	text-align:center;
+}
+.subtotal{
+	width:100px;
+	vertical-align:top;
+	text-align:center;
+}
+.operate{
+	width:80px;
+	vertical-align:top;
+	text-align:center;
+}
+input[type="checkbox"]{
+	width:13px;
+	height:13px;
+	margin-left:-10px;
+	margin-right:5px;
+}
+td input[type=checkbox]{
+	margin-left:-5px;
+}
+/*店铺信息*/
+.tr_2 input[type=checkbox],.tr_3 input[type=checkbox]{
+	margin-left:24px;
+}
+.dialogs{
+	background: url(../imgs/1.gif) no-repeat scroll 50% center;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    margin-top:-5px;
+    margin-left:10px;
+}
+.tr_2 .hong{
+	background: #f13e3a none repeat scroll 0 0;
+    border-radius: 50%;
+    float: left;
+    height: 5px;
+    margin-right: 5px;
+    margin-top: 6px;
+    width: 5px;
+}
+.cheaper{
+	border: 1px solid #f13e3a;
+    border-radius: 5px;
+    color: #f13e3a;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0 5px 0 5px;
+}
+ 
+.cheaper>.smalldown{
+	width:10px;
+	height:5px;
+	border-radius:0;
+	float:right;
+	display:inline-block;
+	background:url(../imgs/6.png);
+
+	margin-top:5px;
+}
+/*商品信息*/
+.tr_3{
+	border:1px solid #ccc;
+}
+.tr_3 td{
+	height:80px;
+	/*background:#F2F2F2;*/
+}
+.tr_3 td input[type=checkbox]{
+	margin-top:-36px;
+	margin-left:0;
+}
+.xt{
+	width: 70px;
+	height: 70px; 
+	border: 1px dotted #000;
+	/*background:url(../imgs/2.jpg);*/
+	/*background-size:cover; */
+}
+.xt img{
+	display:block;
+	width:100%;
+}
+.ms{
+	display:block;
+	width:354px;
+	height:80px;
+	margin-left:10px;
+	font-size:14px;
+}
+.price p{
+	font-size:14px;
+}
+.count .sub{
+	width:29px;
+	height:29px;
+	float:left;
+	margin-left:30px;
+	background:url(../imgs/7.png);
+	background-position:0px -178px;
+} 
+.count .sl{
+	width: 50px;
+	height: 25px;
+	border:1px solid #ccc;
+	float:left;
+	margin-left:57px;
+	line-height:25px;
+	text-align:center;
+	margin-top:-27px;
+	background:#fff;
+}
+.count .add{
+	width:29px;
+	height:29px;
+	float:left;
+	margin-left:109px;
+	margin-top:-29px;
+	background:url(../imgs/7.png);
+	background-position:0px -138px;
+} 
+.subtotal p{
+	font-size:20px;
+	color:#FF5777;
+}
+/*结算部分*/
+.account{
+	width: 1200px;
+	height: 50px;
+	margin-top:15px;
+	border:1px solid #ccc;
+}
+/*左*/
+.account ul:first-child li{
+	float: left;
+	margin-left:20px;
+	line-height:50px;
+}
+.account ul:first-child .mul{
+	margin-left:32px;
+}
+/*右*/
+.total{
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	float:right;
+	margin-right: 300px;
+}
+.t-price{
+	display: block;
+	width: 110px;
+	height: 50px;
+	font-weight:600;
+	font-size:30px;
+	color:#FF5777;
+	line-height: 50px;
+	float:right;
+	margin-right: -290px;
+}
+.symbol{
+ 	color: #ff2058;
+    display: block;
+    float: right;
+    font-size: 30px;
+    margin-right: -173px;
+    margin-top: 7px;
+}
+.payment{
+	float:right;
+	margin-right:-420px;
+	width: 131px;
+	height: 50px;
+	background: url(../imgs/8.png);
+	background-position:0 -212px;
+}
+/*底部部分*/
+#footer{
+	margin:22px 0;
+	margin-bottom:20px;
+	width:100%;
+	/*background:#F2F2F2;*/
+}
+.footer-in{
+	width:1226px;
+	height:150px;
+	margin:0 auto;
+
+}
+/*地上*/
+.footer-in ul{
+	width:210px;
+	height:100px;
+	padding-left:20px;
+	padding-right:70px;
+	float:left;
+	margin-top:25px;
+}
+.footer-in ul li{
+	width:80px;
+	height:20px;
+	float:left;
+
+	
+}
+.footer-in ul li a{
+	font-size:12px;
+}
+.footer-in ul li:nth-child(1){
+	width:234px;
+	height:25px;
+	margin-bottom:10px;
+	padding-left:20px;
+	float:left;
+}
+.footer-in ul li:nth-child(1) a{
+	font-size:14px;
+}
+.footer-in ul li:nth-child(2){
+	margin-right:;
+}
+.footer-in ul:nth-child(4){
+	width:240px;
+	padding-right:50px;
+	padding-left:10px;
+}
+/*底下*/
+.ourinfo,.webinfo {
+	width:1200px;
+	height:20px;
+	margin:0 auto;
+	line-height: 20px;
+
+
+}
+.ourinfo li,.webinfo li{
+	float:left;
+}
+.webinfo .licence{
+	margin:0 5px;
+}
+.ourinfo li{
+	margin-right:32px;
+}
+.ourinfo li a:hover,.webinfo li a:hover{
+	color:red;
+}
+
+
+
