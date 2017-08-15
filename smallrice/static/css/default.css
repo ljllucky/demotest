@@ -1,0 +1,1173 @@
+/* 默认CSS样式 */
+/* 设置公共样式 */
+*{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	font-size:12px;
+}
+li{
+	list-style:none;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+a{
+	text-decoration:none;
+	color:#666;	
+}
+/* 设置公共样式结束*/
+#top{
+	width:100%;
+	height:42px;
+	background-color: #333333;
+}
+#top-in{
+	margin: 0 auto;
+	width:1350px;
+	height:42px;
+	background-color: #333333;
+	}
+.t-l{
+	height:42px;
+
+	margin-left:30px;
+	line-height:42px;
+}
+.t-l>ul>li{
+	float:left;
+	display:block;
+	margin-left:5px;
+}
+.t-l>ul>li>a{
+	padding:0px 5px;
+	color:#B0B0B0;
+}
+.t-l>ul>li>a:hover{
+	color:#FFFFFF;
+}
+.t-l>ul>li>span{
+	color:olivedrab;
+	margin-left:2px;
+	
+}
+
+.t-r{
+	height:42px;
+	margin-right:50px;
+	float:right;	
+	line-height:42px;
+	
+}
+.t-r >ul>li{
+	float:left;
+	display:block;
+	margin-left:10px;
+	color:silver;
+}
+.t-r>ul>li>a{
+	color:#B0B0B0;
+}
+.t-r>ul>li>a:hover{
+	color:#FFFFFF;
+}
+.t-r>ul>li>span{
+	color:olivedrab;
+	margin-left:2px;
+	
+}
+/* 定义头部的样式结束*/
+
+/* LOGO部分开始*/
+#logo{
+	width:1300px;
+	height:92px;
+	margin:0 auto;
+	position:relative;
+	/* border:1px solid black; */
+	
+}
+#logoimg{
+	width:56px;
+	height:56px;
+	float:left;
+	background:url('../imgs/logo.png');
+	border:solid 1px white;
+	position:absolute;
+	top:15px;
+	left:30px;
+}
+.nav{
+		width:668px;
+		height:92px;
+		float:left;
+		line-height:82px;
+		position:absolute;
+        
+		left:130px;
+}
+.nav>ul>li{
+	float:left;
+	display:block;
+}
+.nav>ul>li>a{
+	color:#B0B0B0;
+	margin-top:30px;
+	font-size:16px;
+	color:black;
+}
+#search{
+	width:350px;
+	height:82px;
+	float:right;
+	line-height:82px;
+	position:relativa;
+}
+
+#search>form{
+	margin-top:14px;
+}
+#search input[name=search]{
+	width:317px;
+	height:32px;
+	float:left;
+	border:2px solid sliver;
+	font-size:20px;
+	position:absolute;
+}
+#sousuo{
+	width:31px;
+	height:30px;
+	border:1px solid silver;
+	float:right;
+	position:relativa;
+	background:url('../imgs/soousuo.png') no-repeat;
+	
+	
+}
+/* LOGO部分结束*/
+
+/* content部分开始*/
+#content{
+	width:1350px;
+	/* height:400px; */
+	/* border:5px solid green; */
+	height:420px;
+
+	
+	
+}
+
+#menu{
+	width:230px;
+	height:416px;
+	background:rgb(0,0,0,0.6);
+	/* border:solid 1px red; */
+	float:left;
+	margin-left:65px;
+}
+
+#menu>ul{
+	float:left;
+	margin-top:20px;
+	margin:0 0 0 0;
+	
+
+}
+#mune>ul>li{
+	height:40px;
+	line-height:40px;
+	//background:#FF6700;
+		
+}
+#menu>ul>li>a{
+	display:block;
+	height:40px;
+	width:200px;
+	color:#fff;
+	padding-left:30px;
+	font-size:14px;
+		
+}
+#menu>ul>li>a>span{
+	font-size:16px;
+	color:rgba(255,255,255,0.6);
+	float:right;
+	margin-right:30px;
+			
+}
+#menu>ul>li:hover>a{
+	background:#FF6700;
+}
+#menu>ul>li>.list{
+	width:250px;
+	height:420px;
+	background:blue;
+	position:absolute;
+	top:0;
+	left:230px;
+	display:none;
+}
+#menu>ul>li:hover>.list{
+	display:block;
+	margin-top:135px;
+	margin-left:50px;
+}
+#pic{
+	width:1035px;
+	height:420px;
+	/* border:solid 1px yellow; */
+    float:right;
+	margin-right:16px;
+
+}
+/*content-t区域开始*/
+
+
+#content-t{
+	margin-top:15px;
+	width:1350px;
+	height:180px;
+	/* height:100px; */
+	/* border:1px solid red; */
+	
+}
+#content-t-l{
+	
+	float:left;
+	margin-left:65px;
+	width:230px;
+	height:180px;
+	/* border:1px solid green; */
+	
+}
+#content-t-r{
+	width:1035px;
+	height:180px;
+	/* border:1px solid purple; */
+	float:right;
+	margin-right:16px;
+}
+div[class*="small-l-"]
+{
+	border:0.5px solid rgb(0,0,0,0.6);
+	width:74.5px;
+	height:86px;
+	float:left;
+	background:rgb(0,0,0,0.6);
+	/* background-image:url('../imgs/small-l.png'); */
+	position:relative;
+}
+div[class="small-l-1"]
+{
+   border-bottom: 1px solid silver;
+}
+div[class="small-l-2"]
+{
+   border-bottom: 1px solid silver;
+   border-right: 1px solid silver;
+   border-left: 1px solid silver;
+}
+div[class="small-l-3"]
+{
+   border-bottom: 1px solid silver;
+}
+div[class="small-l-5"]
+{
+   border-right: 1px solid silver;
+   border-left: 1px solid silver;
+}	
+
+div[class*="small-photo-"]
+{
+	position:absolute;
+	left:28px;
+	top:15px;
+	/* border:1px solid red; */
+	width:20px;
+	height:30px;
+	background-image:url(../imgs/small-l.png);
+	background-position: -1px 3px;
+}
+div[class="small-photo-2"]
+{
+	background-image:url(../imgs/small-l.png);
+	background-position: -69px 3px;
+	
+	
+}
+div[class="small-photo-3"]
+{
+
+	background-image:url(../imgs/small-l.png);
+	background-position: -138px 3px;
+}
+div[class="small-photo-4"]
+{
+
+	background-image:url(../imgs/small-l.png);
+	background-position: -2px -73px;
+}
+div[class="small-photo-5"]
+{
+
+	background-image:url(../imgs/small-l.png);
+	background-position: -69px -71px;
+}
+div[class="small-photo-6"]
+{
+
+	background-image:url(../imgs/small-l.png);
+	background-position: -138px -72px;
+}
+
+.small-photo-1:hover 
+{
+	
+	background-image:url(../imgs/small-l.png);
+	background-position: -1px -35px;
+}
+.small-photo-2:hover 
+{
+	background-image:url(../imgs/small-l.png);
+	background-position: -69px -36px;
+}
+.small-photo-3:hover 
+{
+	background-image:url(../imgs/small-l.png);
+	background-position: -138px -35px;
+}
+.small-photo-4:hover 
+{
+	background-image:url(../imgs/small-l.png);
+	background-position: -1px -109px;
+}
+.small-photo-5:hover 
+{
+	background-image:url(../imgs/small-l.png);
+	background-position: -69px -109px;
+}
+.small-photo-6:hover 
+{
+	background-image:url(../imgs/small-l.png);
+	background-position: -138px -109px;
+}
+span[class="font"]
+{
+	position:absolute;
+	left:15px;
+	top:50px;
+	color:silver;
+}
+/* p */
+/* span */
+/* hr */
+/* bodyp */
+/* span */
+/* hr */
+/* body */
+/* /* a * */
+/* li */
+/* ul */
+/* 不加#/ */
+div[class*="small-l-"] span:hover{
+	color:white;
+}
+#da-1{
+	width:320px;
+	height:180px;
+	/* border:1px solid blue; */
+	float:left;
+	margin-left:22px;
+	margin-right:22px;
+	background:url(../imgs/content-2-1.jpg) no-repeat;
+	background-position:center;
+	background-size:contain;
+	
+}
+#da-2{
+	width:320px;
+	height:180px;
+	/* border:1px solid pink; */
+	float:left;
+	margin-right:22px;
+	background:url(../imgs/content-2-2.jpg) no-repeat ;
+	background-position:center;
+	background-size:contain;
+	
+}
+#da-3{
+	width:320px;
+	height:180px;
+	/* border:1px solid purple; */
+	float:left;
+	background:url(../imgs/content-2-3.jpg)no-repeat ;
+	background-position:center;
+	background-size:contain;
+	
+}
+
+/*定义content-t区域结束*/
+
+/*定义content-t-1区域开始*/
+#content-t-1{
+	width:100%;
+	height:58px;
+	/* //border:1px solid yellow; */
+	/* background:#F5F5F5; */
+	margin-top:20px;
+}
+#content-t-1-1{
+	width:1226px;
+	height:58px;
+	//border:1px solid yellow;
+	margin:0 auto;
+}
+#content-t-1-1 .title{
+	width:500px;
+	height:58px;
+	
+	line-height:58px;
+    font-size:30px;
+	float:left;
+}
+#title1{
+	width:100px;
+	height:30px;
+	/* background:green; */
+	//border:1px solid green;
+	margin:10px 0;
+	float:right;
+}
+#title1 span{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	border:1px solid silver;
+	
+	float:right;
+	font-size:20px;
+	
+}
+/*定义content-t-1区域结束*/
+
+
+/*定义content-t-2区域开始*/
+#content-t-2{
+	width:100%;
+	height:300px;
+	/* border:1px solid red; */
+	/* background:red; */
+	margin:20px;
+	
+
+}
+#content-t-2-1{
+	width:1226px;
+	height:300px;
+	/* border:1px solid red; */
+	/* background:red; */
+	margin:0 auto;
+	
+}
+.phone{
+	width:230px;
+	height:300px;
+	/* background:#FAFAFA; */
+	margin-right:13px;
+	text-align:center;
+	float:left;
+	/* border:1px solid green; */
+	
+}
+.phone1{
+	border-top:1px solid #FFAC13;
+}
+.phone2{
+	border-top:1px solid #83C44E;
+}
+.phone3{
+	border-top:1px solid #2196F3;
+}
+.phone4{
+	border-top:1px solid #E53935;
+}
+.phone5{
+	border-top:1px solid #00C0A5;
+	
+}
+.shouji{
+	width:160px;
+	height:160px;
+	display:block;
+	margin:30px 37px 37px 37px ;
+	background:url(../imgs/9.png) center;
+	background-size:contain;
+}
+.zi{
+	color:black;
+}
+.zi:hover{
+	color:black;
+}
+.phone p{
+	width:230px;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	text-align:center;
+	
+}
+.zi-p1{
+	color:#B0B0B0;
+	margin-top:5px;
+}
+.zi-p2{
+	color:#FE6738;
+	margin-top:10px;
+}
+.phone2>.shouji{
+	background:url(../imgs/10.png) center;
+	background-size:contain;
+}
+.phone3>.shouji{
+	background:url(../imgs/11.png) center;
+	background-size:contain;
+}
+.phone4>.shouji{
+	background:url(../imgs/12.png) center;
+	background-size:contain;
+}
+.phone5>.shouji{
+	background:url(../imgs/17.jpg) center;
+	background-size:contain;
+}
+/*定义content-t-2区域结束*/
+/*定义content-t-3区域开始*/
+#content-t-3{
+	width:100%;
+	height:58px;
+	/* border:1px solid yellow; */
+	background:#F5F5F5;
+	margin-top:20px;
+}
+#content-t-3-1{
+	width:1226px;
+	height:58px;
+	/* border:1px solid yellow; */
+	margin:0 auto;
+	background:#F5F5F5;
+	
+}
+#content-t-3-1 .title{
+	width:500px;
+	height:58px;
+	
+	line-height:58px;
+    font-size:30px;
+	float:left;
+}
+#title2{
+	width:100px;
+	height:30px;
+	/* background:green; */
+	/* border:1px solid green; */
+	margin:10px 0;
+	float:right;
+}
+#title2 span{
+	display:inline-block;
+	width:80px;
+	height:20px;
+	line-height:20px;
+	/* border:1px solid silver; */
+	
+	float:right;
+	font-size:16px;
+	
+}
+/*定义content-t-3区域结束*/
+/*定义content-t-4区域开始*/
+#content-t-4{
+	width:100%;
+	height:614px;
+	/* border:1px solid red; */
+	/* background:red; */
+	/* margin-top:20px; */
+	background:#F5F5F5;
+}
+#content-t-4-o{
+	width:1226px;
+	height:614px;
+	//border:1px solid green;
+	
+	
+	margin:0 auto;
+}
+#content-t-4-l{
+	width:234px;
+	height:614px;
+	//border:1px solid blue;
+	/* background:blue; */
+	float:left;
+}
+#content-t-4-r{
+	width:992px;
+	height:614px;
+	//border:1px solid yellow;
+	/* background:yellow; */
+	float:left;
+	
+}
+.phone{
+	width:230px;
+	height:300px;
+	/* background:#FAFAFA; */
+	margin-right:13px;
+	text-align:center;
+	float:left;
+	
+	/* border:1px solid green; */
+	
+}
+
+.shouji{
+	width:160px;
+	height:160px;
+	display:block;
+	margin:30px 37px 37px 37px ;
+	background:url(../imgs/9.png) center;
+	background-size:contain;
+	
+}
+.zi{
+	color:black;
+}
+.zi:hover{
+	color:black;
+}
+.phone p{
+	width:230px;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	text-align:center;
+	
+	
+}
+.zi-p1{
+	color:#B0B0B0;
+	margin-top:5px;
+}
+.zi-p2{
+	color:#FE6738;
+	margin-top:10px;
+}
+.phone6>.shouji{
+	background:url(../imgs/15.jpg) center;
+	background-size:contain;
+}
+.phone7>.shouji{
+	background:url(../imgs/16.jpg) center;
+	background-size:contain;
+}
+.phone8>.shouji{
+	background:url(../imgs/17.jpg) center;
+	background-size:contain;
+}
+.phone9>.shouji{
+	background:url(../imgs/18.jpg) center;
+	background-size:contain;
+}
+.phone-10>.shouji{
+	background:url(../imgs/19.jpg) center;
+	background-size:contain;
+}
+.phone-11>.shouji{
+	background:url(../imgs/21.jpg) center;
+	background-size:contain;
+}
+.phone-12>.shouji{
+	background:url(../imgs/22.jpg) center;
+	background-size:contain;
+}
+.phone-13>.shouji{
+	background:url(../imgs/22.jpg) center;
+	background-size:contain;
+}
+/*定义content-t-4区域结束*/
+/*定义content-t-5区域开始*/
+#content-t-5{
+	width:100%;
+	height:58px;
+	//border:1px solid yellow;
+	background:#F5F5F5;
+	/* margin-top:20px; */
+}
+#content-t-5-1{
+	width:1226px;
+	height:58px;
+	/* //border:1px solid yellow; */
+	background:#F5F5F5;
+	margin:0 auto;
+}
+#content-t-5-1 .title{
+	width:500px;
+	height:58px;
+	background:;
+	line-height:58px;
+    font-size:30px;
+	float:left;
+}
+/*定义content-t-5区域结束*/
+/*定义content-t-6区域开始*/
+#content-t-6{
+	width:100%;
+	height:614px;
+	/* border:1px solid yellow; */
+	/* background:yellow; */
+	/* margin-top:20px; */
+	background:#F5F5F5;
+}
+#content-t-6-1{
+	width:1226px;
+	height:614px;
+	/* border:1px solid yellow; */
+	background:#F5F5F5;
+	margin:0 auto;
+}
+div[class*="phone phone"]
+{
+	background:white;
+}
+div[class*="phone phone"]:hover
+{
+	margin-top:-3px;
+	box-shadow:5px 5px 20px 5px silver;
+}
+div[class*="phone phone-"]
+{
+	margin-top:10px;
+}
+
+div[class="phone phone14"]
+{
+	background:rgb(228,228,228);
+}
+div[class="phone phone-10"]
+{
+	margin-left:15px;
+}
+div[class="phone phone6"]
+{
+	margin-left:15px;
+}
+div[class="phone phone-19"]
+{
+	background:rgb(228,228,228);
+}
+.phone14>.shouji{
+	background:url(../imgs/23.jpg) center;
+	background-size:contain;
+}
+.phone15>.shouji{
+	background:url(../imgs/24.jpg) center;
+	background-size:contain;
+}
+.phone16>.shouji{
+	background:url(../imgs/25.jpg) center;
+	background-size:contain;
+}
+.phone17>.shouji{
+	background:url(../imgs/26.jpg) center;
+	background-size:contain;
+}
+.phone18>.shouji{
+	background:url(../imgs/28.jpg) center;
+	background-size:contain;
+}
+.phone-19>.shouji{
+	background:url(../imgs/29.jpg) center;
+	background-size:contain;
+}
+.phone-20>.shouji{
+	background:url(../imgs/27.jpg) center;
+	background-size:contain;
+}
+.phone-21>.shouji{
+	background:url(../imgs/30.jpg) center;
+	background-size:contain;
+}
+.phone-22>.shouji{
+	background:url(../imgs/31.jpg) center;
+	background-size:contain;
+}
+.phone-23>.shouji{
+	background:url(../imgs/32.jpg) center;
+	background-size:contain;
+}
+/*定义content-t-6区域结束*/
+/*定义content-t-7区域开始*/
+#content-t-7{
+	width:100%;
+	height:58px;
+	/* border:1px solid yellow; */
+	background:#F5F5F5;
+	/* margin-top:20px; */
+}
+#content-t-7-1{
+	width:1226px;
+	height:58px;
+	//border:1px solid yellow;
+	/* background:blue; */
+	margin:0 auto;
+}
+#content-t-7-1 .title{
+	width:500px;
+	height:58px;
+	background:;
+	line-height:58px;
+    font-size:30px;
+	float:left;
+}
+/*定义content-t-7区域结束*/
+/*定义content-t-8区域开始*/
+#content-t-8{
+	width:100%;
+	height:614px;
+	/* border:1px solid yellow; */
+	background:#F5F5F5;
+
+}
+#content-t-8-1{
+	width:1226px;
+	height:614px;
+	/* border:1px solid yellow; */
+	/* background:pink; */
+	margin:0 auto;
+}
+
+.phone24>.shouji{
+	background:url(../imgs/33.jpg) center;
+	background-size:contain;
+	
+	
+}
+.phone25>.shouji{
+	background:url(../imgs/34.jpg) center;
+	background-size:contain;
+	
+}
+.phone26>.shouji{
+	background:url(../imgs/39.jpg) center;
+	background-size:contain;
+	
+}
+.phone27>.shouji{
+	background:url(../imgs/40.jpg) center;
+	background-size:contain;
+	
+}
+.phone28>.shouji{
+	background:url(../imgs/36.jpg) center;
+	background-size:contain;
+	
+	margin-bottom:10px;
+}
+.phone-29>.shouji{
+	background:url(../imgs/38.jpg) center;
+	background-size:contain;
+}
+.phone-30>.shouji{
+	background:url(../imgs/37.jpg) center;
+	background-size:contain;
+}
+.phone-31>.shouji{
+	background:url(../imgs/35.jpg) center;
+	background-size:contain;
+}
+.phone-32>.shouji{
+	background:url(../imgs/42.jpg) center;
+	background-size:contain;
+}
+.phone-33>.shouji{
+	background:url(../imgs/41.jpg) center;
+	background-size:contain;
+}
+/*定义content-t-8区域结束*/
+/*定义content-t-9区域开始*/
+#content-t-9{
+	width:100%;
+	height:58px;
+	/* //border:1px solid yellow; */
+     background:#F5F5F5;
+}
+#content-t-9-1{
+	width:1226px;
+	height:58px;
+	//border:1px solid yellow;
+	/* background:blue; */
+	margin:0 auto;
+}
+#content-t-9-1 .title{
+	width:500px;
+	height:58px;
+	background:;
+	line-height:58px;
+    font-size:30px;
+	float:left;
+}
+/*定义content-t-9区域结束*/
+/*定义content-t-10区域开始*/
+#content-t-10{
+	width:100%;
+	height:614px;
+	/* border:1px solid yellow; */
+	/* background:yellow; */
+	/* margin-top:20px; */
+	background:#F5F5F5;
+}
+#content-t-10-1{
+	width:1226px;
+	height:614px;
+	/* border:1px solid yellow; */
+	/* background:pink; */
+	margin:0 auto;
+}
+
+.phone34>.shouji{
+	background:url(../imgs/43.jpg) center;
+	background-size:contain;
+	
+	
+}
+.phone35>.shouji{
+	background:url(../imgs/44.jpg) center;
+	background-size:contain;
+	
+}
+.phone36>.shouji{
+	background:url(../imgs/46.jpg) center;
+	background-size:contain;
+	
+}
+.phone37>.shouji{
+	background:url(../imgs/46.jpg) center;
+	background-size:contain;
+	
+}
+.phone38>.shouji{
+	background:url(../imgs/47.jpg) center;
+	background-size:contain;
+	
+	margin-bottom:10px;
+}
+.phone-39>.shouji{
+	background:url(../imgs/48.jpg) center;
+	background-size:contain;
+}
+.phone-40>.shouji{
+	background:url(../imgs/49.jpg) center;
+	background-size:contain;
+}
+.phone-41>.shouji{
+	background:url(../imgs/50.jpg) center;
+	background-size:contain;
+}
+.phone-42>.shouji{
+	background:url(../imgs/51.jpg) center;
+	background-size:contain;
+}
+.phone-43>.shouji{
+	background:url(../imgs/52.jpg) center;
+	background-size:contain;
+}
+/*定义content-t-10区域结束*/
+/*定义content-t-11区域开始*/
+#content-t-11{
+	width:100%;
+	height:58px;
+	/* //border:1px solid yellow; */
+   background:#F5F5F5;
+}
+#content-t-11-1{
+	width:1226px;
+	height:58px;
+	//border:1px solid yellow;
+	/* background:blue; */
+	margin:0 auto;
+}
+#content-t-11-1 .title{
+	width:500px;
+	height:58px;
+	background:;
+	line-height:58px;
+    font-size:30px;
+	float:left;
+}
+/*定义content-t-11区域结束*/
+/*定义content-t-12区域开始*/
+#content-t-12{
+	width:100%;
+	height:314px;
+	/* border:1px solid yellow; */
+	/* background:yellow; */
+	/* margin-top:20px; */
+	background:#F5F5F5;
+}
+#content-t-12-1{
+	width:1226px;
+	height:314px;
+	/* border:1px solid yellow; */
+	/* background:pink; */
+	margin:0 auto;
+}
+.phone44>.shouji{
+	background:url(../imgs/53.jpg) no-repeat center;
+	background-size:contain;
+	
+	
+}
+.phone45>.shouji{
+	background:url(../imgs/53.jpg) center;
+	background-size:contain;
+	
+}
+.phone46>.shouji{
+	background:url(../imgs/20.jpg) center;
+	background-size:contain;
+	
+}
+.phone47>.shouji{
+	background:url(../imgs/54.jpg) center;
+	background-size:contain;
+	
+}
+.phone48>.shouji{
+	background:url(../imgs/22.jpg) center;
+	background-size:contain;
+	
+	margin-bottom:10px;
+}
+/*定义content-t-12区域结束*/
+/*定义content-t-13区域开始*/
+#content-t-13{
+	width:100%;
+	height:58px;
+    background:#F5F5F5;
+}
+#content-t-13-1{
+	width:1226px;
+	height:58px;
+	//border:1px solid yellow;
+	/* background:blue; */
+	margin:0 auto;
+}
+#content-t-13-1 .title{
+	width:500px;
+	height:58px;
+	background:;
+	line-height:58px;
+    font-size:30px;
+	float:left;
+}
+/*定义content-t-13区域结束*/
+/*定义content-t-14区域开始*/
+#content-t-14{
+	width:100%;
+	height:314px;
+	/* border:1px solid yellow; */
+	background:yellow;
+	/* margin-top:20px; */
+	background:#F5F5F5;
+}
+#content-t-14-1{
+	width:1226px;
+	height:314px;
+	/* border:1px solid yellow; */
+	background:#F5F5F5;
+	margin:0 auto;
+}
+div[class*="phone phone--"]
+{
+	margin-top:0px;
+	width:292px;
+}
+.phone--49>.shouji{
+	background:url(../imgs/57.jpg) no-repeat center;
+	background-size:contain;
+	
+	
+}
+.phone--50>.shouji{
+	background:url(../imgs/58.jpg) center;
+	background-size:contain;
+	
+}
+.phone--51>.shouji{
+	background:url(../imgs/59.jpg) center;
+	background-size:contain;
+	
+}
+.phone--52>.shouji{
+	background:url(../imgs/60.jpg) center;
+	background-size:contain;
+	
+}
+
+div[class*="phone phone---"]
+{
+
+}
+div[class*="h-"]
+{
+	border:1px solid #F5F5F5;
+	width:292px;
+	height:180px;
+	background:url(../imgs/65.jpg);
+}
+
+.play
+{
+	border:3px solid white	;
+	border-radius:40%;
+	width:30px;height:15px;
+	margin-top:150px;
+	margin-left:20px;
+}
+.play:hover
+{
+	background:gold;
+}
+/*==============================foot内容开始==============================*/
+#foot{width:1330px;margin: 0 auto;margin-top: 20px; position: relative;}
+#foot ul {margin: 0 0 0 0;padding: 0 0 0 0;float: left;display: block;margin-left: 100px;}
+#foot ul li {margin: 0 0 0 0;padding: 0 0 0 0;display: block;margin-top: 10px;}
+#foot ul li span {font-size:20px;}
+#foot a {font-size:20px;color: blue;text-decoration:underline;}
+#foot .foot-bottom {width:1330px;position: absolute;top:250px;text-align:center;}
+#foot .foot-bottom ul{margin-left: 351px;}
+#foot .foot-bottom ul li{float: left;width:103px;height:32px;margin: 0 0 0 2px;}
+/*==============================foot内容结束==============================*/
+.bbbb {border:1px solid white;height:50px;}
+.b1 ul {display:block;	}
+.b1 li {float:left;margin-left:10px;display:block;}
+.b1 li span{margin-left:80px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
