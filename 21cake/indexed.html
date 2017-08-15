@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/indexed.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/resp.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/fly.js"></script>
+</head>
+<body ng-controller="cont">
+    <div ng-view></div>
+
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<!-- <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script> -->
+     <script type="text/javascript">
+         var app=angular.module("myapp",['ngRoute'],RouteConfig);
+            // 三个页面进行跳转
+            function RouteConfig($routeProvider){
+              $routeProvider
+                .when('/',{
+                  templateUrl:"tmpl/index.html"
+                })
+                 .when('/list',{
+                  templateUrl:"tmpl/list.html"
+                })
+               .when('/cart',{
+                  templateUrl:"tmpl/cart.html"
+                })  
+            }
+            app.directive('direc',function(){
+            return {
+                restrict:'AE', 
+                replace : true, 
+                compile:function(){
+                // console.log("OK");
+                    // 轮播部分
+                    var mySwiper = new Swiper ('.lunbo', {
+                        loop:true,
+                        pagination : '.swiper-pagination',
+                        // prevButton:'.swiper-button-prev',
+                        // nextButton:'.swiper-button-next',
+                        autoplay: 1000,
+                    });
+                    // 列表页导航
+                    var mySwiper = new Swiper ('.top-nav', {
+                        slidesPerView :5,
+                        centeredSlides : false,
+                        
+                    });
+                }
+            };
+        });
+             
+    app.controller("cont",function($scope){
+            $scope.data=[
+              {"goodsId":"101010","img":"./images/s1.jpg","describe":"Brownie Cake","fujia":"布朗尼","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"10fddsdf","img":"./images/s2.jpg","describe":"The Nut Job Big","fujia":"布莱克","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"123322","img":"./images/s3.jpg","describe":"Hickory Snow","fujia":"核桃斯诺","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"2332846","img":"./images/s4.jpg","describe":"Rum Cheese Cake","fujia":"朗姆芝士","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"3456","img":"./images/s5.jpg","describe":"Chocolate Mousse","fujia":"黑白巧克力慕斯","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"992348","img":"./images/s6.jpg","describe":"Chestnut Cream","fujia":"栗蓉暗香","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"123131","img":"./images/s7.jpg","describe":"Wall&amp;Tree","fujia":"东方栗融","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"3424221299","img":"./images/s8.jpg","describe":"Pine Stone Cowboy","fujia":"松仁蛋奶","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"djhsjkfh111","img":"./images/s9.jpg","describe":"Bailey's Love Triangle","fujia":"百利甜情人","price":"298","jia":"./images/list-cart.png"},
+               {"goodsId":"57839391sddd","img":"./images/s10.jpg","describe":"Chocolate Mousse","fujia":"黑白巧克力慕斯","price":"298","jia":"./images/list-cart.png"}
+               
+            ];
+            
+            // 购物车结算
+            angular.forEach($scope.data,function(item,index){
+                // console.log(item);
+                item.num=0;
+                item.price=-(-(item.price));
+            })
+            $scope.set=function(goodsId,bool){
+                console.log(goodsId);
+                angular.forEach($scope.data,function(item,index){
+                    if(goodsId==item.goodsId){
+                        if(bool){
+                            if(item.num==0){
+                                item.num=1;
+                                 $scope.cart.push(item);
+                            }else{
+                                item.num++;
+                            }
+                        }else{
+                                item.num--;
+                                item.num=item.num<=0?0:item.num;
+                                
+                        }
+                    }
+
+                })
+                    // console.log($scope.cart);
+                
+            }
+            $scope.cart=[];
+
+            $scope.$watch("data",function(){
+                var allPrice=0;
+                angular.forEach($scope.cart,function(item,index){
+                    allPrice+=item.num*item.price;
+                    if(item.num<=0){
+                        $scope.cart.splice(index,1);
+                    }
+                })
+                // console.log(allPrice);
+
+            },true);
+
+            $scope.sumPrice = function() {
+            var allPrice = 0;
+            angular.forEach($scope.cart, function(item, index) {
+                // 计算总价 
+                allPrice += item.num * item.price;
+                if (item.num <= 0) {
+                    $scope.cart.splice(index, 1)
+                };
+            })
+            return allPrice;
+        }
+
+
+        //商品飞入购物车
+        $scope.fly=function(){
+            //angular.forEach($scope.data,function(item){
+                var flyer = $('<img class="u-flyer" src="./images/cart.png">');
+                flyer[0].src=this.item.img;
+                flyer[0].style.width="80px";
+                flyer[0].height="80";
+               // console.log(item.goodsId)
+            //鼠标在页面点击开始位置计算.
+            var top = $(window).scrollTop();
+            
+            var dh = event.pageY;
+
+            var newh = dh - top;
+
+
+            // 购物车按钮  end在那图片飘到哪
+            var oDiv = $('#end').offset();
+
+
+            var newdh = oDiv.top - top;
+
+            // 我可以设置初始,结束,图片宽度
+            flyer.fly({
+                start: {
+                    left: event.pageX,
+                    top: newh,
+                    // width:1000,
+                    // height:1000,
+                    // 初始的图片样式我可以设置在class类里面
+                },
+                end: {
+                    left: oDiv.left,
+                    top: newdh,
+                    width: 0,
+                    height: 0
+                }
+            });
+           // })
+        }
+
+        })
+        
+     </script>
+
+
+     
+     
+
+</body>
+</html>

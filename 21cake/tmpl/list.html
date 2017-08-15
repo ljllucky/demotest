@@ -1,0 +1,90 @@
+<!-- 头部 -->
+<div id="top">
+    <a href="#/" class="left"></a>
+    <!-- <a href="#/list" class="middle"></a> -->
+    <div class="search-input">
+        <input type="search"  name="search" class="search-box" placeholder="搜索商品" ng-model="goods">
+    </div>
+    <a href="#/cart" class="right"></a>
+    <span style="width:0.8rem;height:0.8rem; border-radius:50%;background:#442818;position:absolute;right:0;top:0;font-size:0.8rem; font-weight:bold;text-align:center;color:#fff">{{cart.length}}</span>
+</div>
+<div id="end"></div>
+<!-- 导航条 -->
+<div direc></div>
+<div class="swiper-container top-nav" >
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="#">推荐</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">生日专区</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">蛋糕</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">下午茶</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">设计师礼品</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">推荐</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">生日专区</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">蛋糕</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">下午茶</a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#">设计师礼品</a>
+        </div>
+    </div>
+</div>
+<!-- 商品清单 -->
+<div id="listshop">
+	<ul>
+		<li id=list-goods-1 ng-repeat="item in data|filter:{fujia:goods}">
+			<div>
+				<div class="list-pro-content">
+					<a href="#">
+						<img ng-src="{{item.img}}" alt="">
+					</a>
+					<h3>
+						{{item.describe}}
+						<span>{{item.fujia}}</span>
+					</h3>
+					<span class="price">{{item.price|currency:"￥"}}</span>
+					<a class="jia" ng-click="set(item.goodsId,true)">
+						<img ng-src="{{item.jia}}" ng-click="fly()">
+						
+					</a>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- 底部	 -->
+<div class="footer">
+    <ul>
+        <li>
+            <a href="#">下载APP</a>
+        </li> 
+        <li>
+            <a href="#">联系我们</a>
+        </li> 
+        <li>
+            <a href="#">全站公告</a>
+        </li>
+    </ul>
+    <p>
+       Copyright© 21Cake蛋糕官网商城 2007-2017,
+       <br><br>
+       版权所有京ICP备14006254号-1
+    </p>
+</div>
+

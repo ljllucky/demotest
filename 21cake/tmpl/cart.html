@@ -1,0 +1,118 @@
+<!-- 头部 -->
+<div id="top">
+    <a href="#/" class="left"></a>
+    <a href="#/list" class="middle"></a>
+    <a href="#/cart" class="right"></a>
+</div>
+<!-- 购物车部分 -->
+<div id="container">
+	<p class="cart-top-tip" id="top-notice">· 满100元免配送服务费 ·</p>
+	<ul class="cart-list">
+		<li class="cart-goods-item" ng-repeat="item in cart">
+			<div class="cart-pro-box">
+				<a href="#">
+					<img ng-src="{{item.img}}" alt="">
+				</a>
+				<div class="cart-pro-title">
+					<h2>
+						{{item.describe}}
+						<br> 
+						<span>{{item.fujia}}</span>
+
+					</h2>
+					<!-- <span>{{item.fujia}}</span> -->
+					<span class="price">{{item.num*item.price|currency:"￥"}}</span>
+				</div>
+			</div>
+			<div class="cart-pro-number">
+				<a class="shanchu" ng-click="set(item.goodsId,false)">
+					<img src="images/jianhao.png" alt="">
+				</a>
+				<span class="quantity ">{{item.num}}</span>
+				<a class="caozuo" ng-click="set(item.goodsId,true)">
+					<img src="images/jiahao.png" alt="">
+				</a>
+			</div>
+			<p class="laid-count">每份含免费餐具5套</p>
+			<a class="birthday-brand">+添加生日牌</a>
+		</li>
+		<li class="dapei-list">
+			<p class="cart-top-tip2" id="top-notice">· 搭配商品 ·</p>
+			<dl class="shopping-list bb br">
+				<dt>
+					<div>
+						<img src="images/d1.jpg" alt="">
+					</div>
+				</dt>
+				<dd>
+					<h4>方形蜡烛</h4>
+					<span>￥5.00</span>
+				</dd>
+				<dd class="cart-button">
+					<img src="images/list-cart.png" alt="">
+				</dd>
+			</dl>
+			<dl class="shopping-list bb">
+				<dt>
+					<div>
+						<img src="images/d3.png" alt="">
+					</div>
+				</dt>
+				<dd>
+					<h4>方形蜡烛</h4>
+					<span>￥5.00</span>
+				</dd>
+				<dd class="cart-button">
+					<img src="images/list-cart.png" alt="">
+				</dd>
+			</dl>
+			<dl class="shopping-list bb br">
+				<dt>
+					<div>
+						<img src="images/d3.png" alt="">
+					</div>
+				</dt>
+				<dd>
+					<h4>方形蜡烛</h4>
+					<span>￥5.00</span>
+				</dd>
+				<dd class="cart-button">
+					<img src="images/list-cart.png" alt="">
+				</dd>
+			</dl>
+			<dl class="shopping-list bb">
+				<dt>
+					<div>
+						<img src="images/d1.jpg" alt="">
+					</div>
+				</dt>
+				<dd>
+					<h4>方形蜡烛</h4>
+					<span>￥5.00</span>
+				</dd>
+				<dd class="cart-button">
+					<img src="images/list-cart.png" alt="">
+				</dd>
+			</dl>
+		</li>
+	</ul>
+</div>
+<!-- 结算部分 -->
+<div id="cart-bottom">
+	<a href="#" class="order-delete"></a>
+	<span class="count" ng-model="item.num">商品数量:{{cart.length}}</span>
+	<a href="javascript:void(0);" class="place-order" id="submit-form">去结算</a>
+	<div class="pay-money" id="cart-total-amount">
+		<div>
+			<span>总价:{{sumPrice()|currency:"￥"}}</span>
+				
+		</div>
+			<!-- <div class="pay-money-plus">+</div>
+			<div>
+				<span>￥0</span>
+				<span>配送费</span>
+			</div> -->
+	</div>
+</div>
+	
+
